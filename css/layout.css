@@ -83,7 +83,6 @@ body {
    display: flex;
    justify-content: center; /* Center the menu items */
    flex-wrap: nowrap; /* Keep items in a single row */
-   overflow-x: auto; /* Allows horizontal scrolling if needed */
    white-space: nowrap; /* Prevent items from wrapping to the next line */
 }
 
