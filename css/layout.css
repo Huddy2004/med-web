@@ -73,29 +73,31 @@ body {
    top: 0; /* Navbar at the top */
    width: 100%; /* Full width */
    z-index: 1000; /* Ensure navbar is above other elements */
+   overflow: hidden; /* Prevents content from spilling outside */
 }
 
 .page-nav ul {
-    list-style: none;
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Center the navigation items */
-    align-items: center;
-    width: 100%;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center; /* Center the menu items */
+   flex-wrap: nowrap; /* Keep items in a single row */
+   white-space: nowrap; /* Prevent items from wrapping to the next line */
 }
 
 .page-nav ul li {
-    display: inline-block;
+   display: inline-block;
+   margin: 0; /* Remove any margin to reduce spacing */
 }
 
 .page-nav ul li a {
-    display: block;
-    padding: 10px 15px;
-    text-align: center;
+   display: block;
+   padding: 10px 15px; /* Adjust padding to reduce spacing */
+   color: rgb(0, 0, 0);
+   text-decoration: none;
+   transition: background-color 0.3s ease; /* Smooth transition for hover */
 }
-
-
 
 .page-nav ul li:hover .submenu {
    display: block;
@@ -105,7 +107,6 @@ body {
    background-color: #ccc; /* Change to the desired hover color */
    color: #fff; /* Change text color when hovering */
 }
-
 /* Footer Styles */
 #footer-layout {
     background: #d0d0d0;
