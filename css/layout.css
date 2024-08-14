@@ -77,27 +77,27 @@ body {
 }
 
 .page-nav ul {
-   list-style: none;
-   margin: 0;
-   padding: 0;
-   display: flex;
-   justify-content: center; /* Center the menu items */
-   flex-wrap: nowrap; /* Keep items in a single row */
-   white-space: nowrap; /* Prevent items from wrapping to the next line */
+    list-style: none;
+    margin: 0 auto; /* Center the list container */
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    align-items: center; /* Vertically center items */
+    width: 100%; /* Ensure the ul spans full width */
 }
 
 .page-nav ul li {
-   display: inline-block;
-   margin: 0; /* Remove any margin to reduce spacing */
+    display: inline-block;
 }
 
 .page-nav ul li a {
-   display: block;
-   padding: 10px 15px; /* Adjust padding to reduce spacing */
-   color: rgb(0, 0, 0);
-   text-decoration: none;
-   transition: background-color 0.3s ease; /* Smooth transition for hover */
+    display: block;
+    padding: 15px 20px; /* Adjust padding to reduce or increase spacing */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
 }
+
 
 .page-nav ul li:hover .submenu {
    display: block;
