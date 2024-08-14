@@ -73,7 +73,6 @@ body {
    top: 0; /* Navbar at the top */
    width: 100%; /* Full width */
    z-index: 1000; /* Ensure navbar is above other elements */
-   overflow: hidden; /* Prevents content from spilling outside */
 }
 
 .page-nav ul {
