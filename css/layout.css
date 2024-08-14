@@ -77,28 +77,24 @@ body {
 
 .page-nav ul {
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     display: flex;
-    justify-content: space-between; /* Distribute items evenly */
+    justify-content: center; /* Center the navigation items */
     align-items: center;
     width: 100%;
-    padding: 0 15px; /* Add padding to prevent items from touching screen edges */
 }
 
 .page-nav ul li {
     display: inline-block;
-    flex: 1; /* Allow items to grow and fill available space */
-    text-align: center; /* Center the text within each item */
 }
 
 .page-nav ul li a {
     display: block;
-    padding: 10px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    width: 100%;
+    padding: 10px 15px;
+    text-align: center;
 }
+
 
 
 .page-nav ul li:hover .submenu {
@@ -141,6 +137,18 @@ body {
 }
 
 /* phone media below*/
+
+@media (max-width: 767px) {
+    .page-nav ul {
+        justify-content: space-between; /* Ensure even spacing on small screens */
+        padding: 0 15px; /* Add padding to avoid content touching screen edges */
+    }
+
+    .page-nav ul li a {
+        padding: 10px 15px;
+    }
+}
+
 
 @media (max-width: 767px) {
     html,
