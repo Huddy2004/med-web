@@ -138,17 +138,6 @@ body {
 
 /* phone media below*/
 
-@media (max-width: 767px) {
-    .page-nav ul {
-        justify-content: space-between; /* Ensure even spacing on small screens */
-        padding: 0 15px; /* Add padding to avoid content touching screen edges */
-    }
-
-    .page-nav ul li a {
-        padding: 10px 15px;
-    }
-}
-
 
 @media (max-width: 767px) {
     html,
